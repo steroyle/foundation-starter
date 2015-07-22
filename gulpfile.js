@@ -13,7 +13,8 @@ gulp.task('styles', function() {
   ])
   .pipe(sass({
     includePaths: [
-      paths.bower + '/foundation/scss'
+      paths.bower + '/foundation/scss',
+      paths.bower + '/bourbon/app/assets/stylesheets'      
     ]
   }))
   .pipe(concat('app.css'))
